@@ -1,22 +1,31 @@
-// components/Dashboard/HomePage.jsx
-
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FilterBar, PokemonCard, Loader } from './'
+import { PokemonContext } from './TuContexto'
+import './HomePage.css'
 
 const HomePage = () => {
-  // Aquí utilizarías el contexto para obtener la lista de Pokémon y otros datos necesarios
+  const { pokemonData, isLoading } = useContext(PokemonContext)
+
+  const [filteredPokemonData, setFilteredPokemonData] = useState([])
+
+  useEffect(() => {
+    setFilteredPokemonData(pokemonData)
+  }, [pokemonData])
 
   return (
     <div>
-      <FilterBar />
-      {/* Map sobre la lista de Pokémon y renderizar tarjetas */}
+      <FilterBar setFilteredPokemonData={setFilteredPokemonData} />
       <div className='pokemon-list'>
-        {/* Ejemplo: */}
-        {/* {pokemons.map((pokemon) => (
-          <PokemonCard key={pokemon.id} pokemon={pokemon} />
-        ))} */}
+        {isLoading
+          ? (
+            <Loader />
+            )
+          : (
+              filteredPokemonData.map((pokemon) => (
+                <PokemonCard key={pokemon.id} pokemon={pokemon} />
+              ))
+            )}
       </div>
-      <Loader />
     </div>
   )
 }
