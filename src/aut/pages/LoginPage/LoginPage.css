@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    overflow: hidden;
+  }
+
+.background{
+    z-index: -1;
+    position: absolute;
+}
+
+.login-page,
+.welcome,
+.input-field,
+.submit-button,
+.forgot-password {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .right-third {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(110% / 3);
+    margin-left: auto;
+  }
+  
+  .welcome {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 85%; 
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%; 
+  }
+  
+  .input-field,
+  .submit-button {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px; 
+    width: 100%; 
+    box-sizing: border-box;
+  }
+  
+  .input-field {
+    height: 150%; 
+  }
+  
+  .submit-button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .submit-button:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }

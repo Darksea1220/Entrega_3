@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { LoginPage } from './aut/pages'
-import { DetailPage, PageNotFound } from './dashboard/pages'
+import { DetailPage, PageNotFound, HomePage } from './dashboard/pages'
 
 export function AppRouter () {
   return (
@@ -11,6 +11,10 @@ export function AppRouter () {
           element={<LoginPage />}
         />
         <Route
+          path='/Dashboard'
+          element={<HomePage />}
+        />
+        <Route
           path='/detail'
           element={<DetailPage />}
         />
@@ -18,6 +22,7 @@ export function AppRouter () {
           path='/*'
           element={<PageNotFound />}
         />
+        <Route index element={<Navigate to='/login' />} />
       </Routes>
     </main>
   )

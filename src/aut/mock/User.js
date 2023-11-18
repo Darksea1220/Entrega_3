@@ -1,4 +1,4 @@
 export const doomieUser = {
-  email: 'doomie@gmail.com',
-  password: 'doomiepassword123'
+  email: 'dommie@gmail.com',
+  password: 'dommiepassword123'
 }
