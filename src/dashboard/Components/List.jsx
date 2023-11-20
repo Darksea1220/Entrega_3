@@ -1,8 +1,8 @@
-import { Useform } from '../hooks/Useform'
+// import { Useform } from '../../aut/Hooks/useForm'
 import { PokemonCard } from './PokemonCard/PokemonCard'
 
 export function List () {
-  const { pokes } = Useform()
+  // const { pokes } = Useform()
 
   return (
     <>

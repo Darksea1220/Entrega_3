@@ -1,3 +1,3 @@
 export function DetailPage () {
-  return (<></>)
+  return (<><p>Detalles del pokemon</p></>)
 }

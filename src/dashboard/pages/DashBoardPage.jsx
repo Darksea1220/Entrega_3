@@ -1,5 +1,5 @@
-import { Useform } from '../hooks/Useform'
-import { FilterBar, Loader, PokemonCard, List } from '../components'
+import { Useform } from '../Hooks/Useform'
+import { FilterBar, Loader, PokemonCard, List } from '../components/index'
 
 export function DashBoardPage () {
   const { isLoading } = Useform()

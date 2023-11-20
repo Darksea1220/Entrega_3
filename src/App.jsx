@@ -1,11 +1,13 @@
 import React from 'react'
-// import { Login } from './components'
 import { AppRouter } from './AppRouter'
+import { AuthContextProvider } from './aut/context/AuthContextProvider'
 
 function App () {
   return (
     <>
-      <AppRouter />
+      <AuthContextProvider>
+        <AppRouter />
+      </AuthContextProvider>
     </>
   )
 }

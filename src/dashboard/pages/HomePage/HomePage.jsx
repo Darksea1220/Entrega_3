@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
+import { useState } from 'react'
 import { FilterBar, PokemonCard, Loader } from '../../Components'
 // import { PokemonContext } from ''PokemonContext
 import './HomePage.css'
@@ -6,14 +6,12 @@ import './HomePage.css'
 export function HomePage () {
   // const { pokemonData, isLoading } = useContext()
 
-  //! esto lo puse así para que no de error porque no sé como se supone que se va a usar lo de la linea 7
-  const pokemonData = []
-  const isLoading = ''
+  const isLoading = false
   const [filteredPokemonData, setFilteredPokemonData] = useState([])
 
-  useEffect(() => {
-    setFilteredPokemonData(pokemonData)
-  }, [])
+  // useEffect(() => {
+  //   setFilteredPokemonData(pokemonData)
+  // }, [])
 
   return (
     <div>

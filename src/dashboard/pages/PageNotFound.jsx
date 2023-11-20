@@ -1,3 +1,3 @@
 export function PageNotFound () {
-  return (<><p>no hay na</p></>)
+  return (<><p>404 pagína no válida</p></>)
 }

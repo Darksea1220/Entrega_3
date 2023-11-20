@@ -3,9 +3,9 @@ import './Loader.css'
 
 export function Loader () {
   return (
-    <div className='loader-container'>
-      <div className='loader' />
-      <p>Cargando...</p>
+    <div className='wrapper'>
+      <div className='pokeball' />
     </div>
+
   )
 }

@@ -5,7 +5,6 @@ import './FilterBar.css'
 export function FilterBar () {
   // const { pokemonData, setFilteredPokemonData } = useContext()
 
-  //! misma situación del home page
   const pokemonData = ''
   const setFilteredPokemonData = ''
   const [filtroTipo, setFiltroTipo] = useState('')

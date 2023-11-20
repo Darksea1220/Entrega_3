@@ -1,0 +1,1 @@
+Logramos hacer el login funcional aunque no protegido, ibamos por buen camino pero al hacer los hooks y el contexto dañamos todo y no salió ya nada en pantalla, fallamos.
